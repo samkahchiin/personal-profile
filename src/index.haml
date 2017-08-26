@@ -15,7 +15,7 @@
       %header.major
         %h1 Sam Kah Chiin
         %p
-          Ruby on Rails Developer | Freelancer
+          Ruby on Rails Developer | Aws Solutions Architect Associate | Freelancer
       .container
         %ul.actions
           %li
@@ -24,41 +24,41 @@
     %section#one.main.special
       .container
         %span.image.fit.primary
-          %img{:alt => "", :src => "images/pic01.jpg"}/
+          %img{:alt => "", :src => "images/pic01.jpg"}
         .content
           %header.major
-            %h2 Who I am
-          %p A passionate, self-motivated person who is willing to take the initiatives to
-
-          learn new knowledge beyond studies,
-          including coding, music, debate, and social entrepreneurship.
-          Being an avid backpacker, she is readily adapts to new working environment and
-          has no problem to communicate with person.
-          She is positive and is able to work independently or as a team.
+            %h2 Website Development
+          %p I am able to provide agency service, without the agency price.          |
+          I enjoy working with local businesses within Malaysia and Singapore area.  |
+          Whether you are looking for creating a website or making a product protoype using web apps |
+          it's worth to have a quick conversation with me to see what I can offer you |
         %a.goto-next.scrolly{:href => "#two"} Next
     / Two
     %section#two.main.special
       .container
-        %span.image.fit.primary
-          %img{:alt => "", :src => "images/pic02.jpg"}/
         .content
           %header.major
-            %h2 Stuff I do
-          %p Consequat sed ultricies rutrum. Sed adipiscing eu amet interdum lorem blandit vis ac commodo aliquet vulputate.
-          %ul.icons-grid
-            %li
-              %span.icon.major.fa-camera-retro
-              %h3 Magna Etiam
-            %li
-              %span.icon.major.fa-pencil
-              %h3 Lorem Ipsum
-            %li
-              %span.icon.major.fa-code
-              %h3 Nulla Tempus
-            %li
-              %span.icon.major.fa-coffee
-              %h3 Sed Feugiat
-        %a.goto-next.scrolly{:href => "#three"} Next
+            %h2 Technologies
+            .row
+              .6u{:class => "12u$(medium)"}
+                %h5 Days to days comfort
+                %ul
+                  %li Ruby on Rails / HAML
+                  %li HTML5 / CSS / Sass
+                  %li Javascript / JQuery / Knockout.js / Coffeescript
+                  %li AJAX
+                  %li Responsive Layout and Design
+                  %li Version Control (GIT)
+                  %li Agile Methodology
+                  %li VIM
+              %div{:class => "6u$ 12u(medium)"}
+                %h5 Have Experience At
+                %ul
+                  %li Backbone.js / React.js
+                  %li Amazon S3 / EC2
+                  %li Grunt
+
+        %a.goto-next.scrolly{:href => "#footer"} Next
     / Three
     %section#three.main.special
       .container
@@ -301,36 +301,54 @@
                 %span.button.special.disabled Disabled
               %li
                 %span.button.disabled Disabled
-          %section
-            %h4 Form
-            %form{:action => "#", :method => "post"}
-              .row.uniform
-                .6u{:class => "12u$(xsmall)"}
-                  %input#demo-name{:name => "demo-name", :placeholder => "Name", :type => "text", :value => ""}/
-                %div{:class => "6u$ 12u$(xsmall)"}
-                  %input#demo-email{:name => "demo-email", :placeholder => "Email", :type => "email", :value => ""}/
-                %div{:class => "12u$"}
-                  .select-wrapper
-                    %select#demo-category{:name => "demo-category"}
-                      %option{:value => ""} - Category -
-                      %option{:value => "1"} Manufacturing
-                      %option{:value => "1"} Shipping
-                      %option{:value => "1"} Administration
-                      %option{:value => "1"} Human Resources
-                .4u{:class => "12u$(small)"}
-                  %input#demo-priority-low{:checked => "checked", :name => "demo-priority", :type => "radio"}/
-                  %label{:for => "demo-priority-low"} Low
-                .4u{:class => "12u$(small)"}
-                  %input#demo-priority-normal{:name => "demo-priority", :type => "radio"}/
-                  %label{:for => "demo-priority-normal"} Normal
-                %div{:class => "4u$ 12u$(small)"}
-                  %input#demo-priority-high{:name => "demo-priority", :type => "radio"}/
-                  %label{:for => "demo-priority-high"} High
-                .6u{:class => "12u$(small)"}
-                  %input#demo-copy{:name => "demo-copy", :type => "checkbox"}/
-                  %label{:for => "demo-copy"} Email me a copy
-                %div{:class => "6u$ 12u$(small)"}
-                  %input#demo-human{:checked => "checked", :name => "demo-human", :type => "checkbox"}/
-                  %label{:for => "demo-human"} Not a robot
-                %div{:class => "12u$"}
-                  %textarea#demo-message{:name => "demo-message", :placeholder => "Enter your message", :rows => "6"}
+
+    %section#footer.main.special
+      .container
+        .content
+          %header.major
+            %h2 Get in touch
+          %form{:action => "#", :method => "post"}
+            .row.uniform
+              .6u{:class => "12u$(xsmall)"}
+                %input#first-name{:name => "first-name", :placeholder => "First Name", :type => "text", :value => ""}
+              %div{:class => "6u$ 12u$(xsmall)"}
+                %input#last-name{:name => "last-name", :placeholder => "Last Name", :type => "text", :value => ""}
+              %div{:class => "12u$"}
+                %input#email{:name => "email", :placeholder => "Email", :type => "email", :value => ""}
+              %div{:class => "12u$"}
+                %textarea#demo-message{:name => "demo-message", :placeholder => "Enter your message", :rows => "6"}
+              %div{:class => "12u$"}
+                %ul.actions
+                  %li
+                    %a.button{:href => "#"} Send Message
+
+          %ul.icons-grid
+            %li
+              %span.icon.major.fa-camera-retro
+              %h3 Magna Etiam
+            %li
+              %span.icon.major.fa-pencil
+              %h3 Lorem Ipsum
+            %li
+              %span.icon.major.fa-code
+              %h3 Nulla Tempus
+            %li
+              %span.icon.major.fa-coffee
+              %h3 Sed Feugiat
+
+      %footer
+        %ul.icons
+          %li
+            %a.icon.fa-github{:href => "https://github.com/samkahchiin"}
+              %span.label Github
+          %li
+            %a.icon.fa-linkedin{:href => "https://www.linkedin.com/in/kah-chiin-sam-618b2685/"}
+              %span.label Linkedin
+        %ul.copyright
+          %li 2017 © Sam Kah Chiin. All right reserved.
+          %li
+            Design:
+            %a{:href => "http://html5up.net"} HTML5 UP
+          %li
+            Background Images:
+            %a{:href => "http://unsplash.com"} Unsplash
