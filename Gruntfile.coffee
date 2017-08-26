@@ -31,7 +31,7 @@ module.exports = (grunt) ->
 
     watch:
       haml:
-        files: ["src/**/index.haml"]
+        files: ["src/**/*.haml"]
         tasks: ["compile:haml"]
       coffee:
         files: ["src/js/**/*.coffee"]
