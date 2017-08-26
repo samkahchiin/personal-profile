@@ -1312,7 +1312,7 @@
 	html {
 		background-color: #313a3d;
 		background-attachment: fixed,						fixed;
-		background-image: url("images/overlay.png"), url("../../images/bg.jpg");
+		background-image: url("/images/overlay.png"), url("/images/bg.jpg");
 		background-position: top left,					center center;
 		background-repeat: repeat,						none;
 		background-size: auto,						cover;
@@ -2170,7 +2170,7 @@
 	}
 
 		.image:before {
-			background: url("images/overlay.png");
+			background: url("/images/overlay.png");
 			content: '';
 			display: block;
 			height: 100%;
@@ -2653,7 +2653,7 @@
 			-ms-transition: background-color 0.2s ease-in-out;
 			transition: background-color 0.2s ease-in-out;
 			background-color: rgba(144, 144, 144, 0.075);
-			background-image: url("images/arrow.svg");
+			background-image: url("/images/arrow.svg");
 			background-position: center center;
 			background-repeat: no-repeat;
 			border-radius: 100%;
