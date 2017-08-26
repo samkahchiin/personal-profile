@@ -1,0 +1,36 @@
+{
+  "name": "haml-coffee-boilerplate",
+  "version": "1.0.0",
+  "description": "Compiling haml and coffee and serving using grunt server",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:rpbaltazar/haml-coffee-boilerplate.git"
+  },
+  "keywords": [
+    "haml",
+    "coffee",
+    "boilerplate",
+    "html",
+    "grunt",
+    "npm"
+  ],
+  "author": "Rui Baltazar",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rpbaltazar/haml-coffee-boilerplate/issues"
+  },
+  "homepage": "https://github.com/rpbaltazar/haml-coffee-boilerplate",
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-concurrent": "^2.3.1",
+    "grunt-contrib-coffee": "^1.0.0",
+    "grunt-contrib-connect": "^1.0.2",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-haml2html": "^0.3.0"
+  }
+}
