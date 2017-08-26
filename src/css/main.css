@@ -1,14 +1,7 @@
 @import url("font-awesome.min.css");
 @import url("https://fonts.googleapis.com/css?family=Raleway:400,400italic,700,800");
 
-/*
-	Highlights by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-*/
-
 /* Reset */
-
 	html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
 		margin: 0;
 		padding: 0;
@@ -1312,6 +1305,7 @@
 	html {
 		background-color: #313a3d;
 		background-attachment: fixed,						fixed;
+    /* TODO: Photo by Dan Gold on Unsplash */
 		background-image: url("/images/overlay.png"), url("/images/bg.jpg");
 		background-position: top left,					center center;
 		background-repeat: repeat,						none;
@@ -2226,6 +2220,10 @@
 			padding-left: 0.25em;
 		}
 
+  #two ul {
+    text-align: left;
+  }
+
 	ul {
 		list-style: disc;
 		margin: 0 0 2em 0;
@@ -3031,3 +3029,75 @@
 				}
 
 	}
+
+/* Gallery */
+.gallery {
+  display: -moz-flex;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  -moz-flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  width: 45em;
+  max-width: 100%;
+  margin: 0 auto 2em auto;
+}
+
+.gallery .image:after {
+  content: '\A';
+  width: 100%;
+  height:100%;
+  top:0; left:0;
+  background:rgba(0,0,0,0.6);
+}
+
+.image:after, .image:before {
+  position: absolute;
+  opacity: 0;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+}
+
+.image:before {
+  content: attr(data-content);
+  width:100%;
+  color:#fff;
+  z-index:1;
+  bottom:0;
+  padding:4px 10px;
+  text-align:center;
+  background:none;
+  box-sizing:border-box;
+  -moz-box-sizing:border-box;
+  font-weight: bold;
+  top: 45%;
+}
+
+.gallery .image:hover:after, .image:hover:before {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.gallery article {
+  width: 50%;
+  position: relative;
+  opacity: 1.0;
+}
+
+.gallery article .image {
+  margin: 0;
+  display: block;
+  padding: 10px;
+}
+
+@media screen and (max-width: 480px) {
+  .gallery article {
+    width: 100%;
+  }
+}
+
+#honeypot, #thankyou-message {
+  display: none;
+}
