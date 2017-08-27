@@ -3104,3 +3104,7 @@
     width: 100%;
   }
 }
+
+#honeypot, #thankyou_message {
+  display: none;
+}
